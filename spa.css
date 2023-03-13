@@ -143,6 +143,19 @@ header{
     height: 38em;
     grid-template-columns: repeat(20, 1fr);
 }
+.package{
+    position: absolute;
+    left: 0.5em;
+    top: 1em;
+    height: 2.5em;
+    width: 5em;
+    font-size: 1.2em;
+    color: white;
+    background-color: #0098a1;;
+    border-radius: 0.5em;
+    outline: none;
+    border: none;
+}
 .gallery .row-container .row{
     position: relative;
     flex: 1 1 30em;
@@ -191,4 +204,32 @@ header{
 /* Gallery End*/
 
 /* Services Start*/
+.services h1{
+    color: #0098a1;
+    font-size:60px;
+    width:4em;
+    margin: auto;
+}
+.services .row-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 25px 100px;
+    gap: 5em;
+}
+.services .row-container .row{
+    height: 18em;
+    box-shadow: 2px 2px 8px #ccc;
+}
+.services .row-container .row .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.services .row-container .row img{
+    margin-left: 5em;
+    height: 200px;
+    width: 200px;
+}
+
 /* Services End*/
