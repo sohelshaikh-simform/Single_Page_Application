@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'kalam',cursive;
+}
+body{
+
+    background-attachment: fixed;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.logo{
+    margin-left: 50px;
+    /* margin-top: 3px; */
+    color: #0098a1;
+    font-size: 30px;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    box-shadow: 8px 8px 10px #cbced1,-8px -8px 10px #cbced1;
+    justify-content: space-between;
+    /* margin-top: 1.5em; */
+    height: 2.5em;
+    font-size: large;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    
+}
+.navbar ul{
+    display: flex;
+    justify-content:space-evenly;
+    width: 500px;
+    margin-top: 6px; 
+}
+.navbar ul li{
+    list-style-type: none;
+}
+
+.navbar ul li a:hover{
+    color: #0098a1;
+}
+
+/* home Screen */
+
+.home .video video{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+.home .content{
+    position: absolute;
+    top: 300px;
+    left: 200px;
+}
+.home .content h1{
+    color: #094c50;
+    font-size:60px;
+    align-items: center;
+}
+.home .content p{
+    color: #090a50;
+    font-size:20px;
+
+}
+
+/* about Start */
+
+.about .row-container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10em;
+    margin-left: 10em;
+    margin-top: 5em;
+}
+.about h1{
+    color: #0098a1;
+    font-size:60px;
+    width:4em;
+    margin: auto;
+}
+.about .row-container img{
+    height: 500px;
+    width: 500px;
+}
+.about .row-container .row{
+    width: 30em;
+    height: 30em;
+}
+.about .row-container .row h2{
+    color: #0098a1;
+    /* font-size: 45px; */
+
+}
+.about .row-container .row .content{
+    margin-top: 3em;
+}
+.btn{
+    border: none;
+    outline: none;
+    height: 2em;
+    width: 5em;
+    margin-top: 1em;
+    background-color: #0098a1;
+    color: white;
+    
+    font-size: 20px
+}
+.btn:hover{
+    background-color: white;
+    color: #0098a1;
+
+}
+/* about End */
+
+/* Gallery Start*/
+.gallery{
+    box-shadow: 2px 2px 8px #ccc;
+    margin: 25px 80px 25px 100px;
+}
+.gallery h1{
+    color: #0098a1;
+    font-size:60px;
+    width:4em;
+    margin: auto;
+}
+
+.gallery .row-container{
+    margin: 25px 100px;
+    overflow: hidden;
+    gap: 5em;
+    width: 3000px;
+    display: grid;
+    height: 38em;
+    grid-template-columns: repeat(20, 1fr);
+}
+.gallery .row-container .row{
+    position: relative;
+    flex: 1 1 30em;
+    box-shadow: 2px 2px 8px #ccc;
+    height: 36em;
+}
+
+.gallery .row-container .row img{
+    height: 25em;
+    width: 25em;
+}
+.scroll-product{
+    display: flex;
+    background-color: transparent;
+}
+.scroll-left-btn{
+    position: relative;
+    align-self: center;
+    margin: 0px 10px 0px 0px;
+}
+
+.scroll-right-btn{
+    position: relative;
+    align-self: center;
+    margin: 0px 0px 0px 10px;
+}
+.scroll-left-btn > button{
+    box-shadow:  2px 1px 0 rgb(0 0 0 / 11%),-1px -2px 0 rgb(0 0 0 / 11%);
+    background-color: white;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    padding: 40px 10px;
+    cursor: pointer;
+}
+.scroll-right-btn > button{
+    box-shadow:  2px 1px 0 rgb(0 0 0 / 11%),-1px -2px 0 rgb(0 0 0 / 11%);
+    background-color: white;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    padding: 40px 10px;
+    cursor: pointer;
+}
+.scroll-right-btn > button > svg{
+    transform: rotate(180deg);
+}
+/* Gallery End*/
+
+/* Services Start*/
+/* Services End*/
