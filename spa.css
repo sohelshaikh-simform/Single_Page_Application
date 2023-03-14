@@ -218,6 +218,7 @@ header{
 }
 .services .row-container .row{
     height: 18em;
+    width: 30em;
     box-shadow: 2px 2px 8px #ccc;
 }
 .services .row-container .row .content{
@@ -227,9 +228,9 @@ header{
     align-items: center;
 }
 .services .row-container .row img{
-    margin-left: 5em;
-    height: 200px;
-    width: 200px;
+    margin-left: 10em;
+    height: 10em;
+    width: 10em;
 }
 
 /* Services End*/
