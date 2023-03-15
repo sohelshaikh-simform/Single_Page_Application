@@ -3,7 +3,7 @@ var buttonLeft = document.getElementById('scroll-left');
 var buttonRight = document.getElementById('scroll-right');
 var x = document.querySelectorAll('#All-Products .row')
 
-
+// 
 var l = x.length;
 // console.log(l);
 var p = 0;
@@ -52,15 +52,15 @@ let close=document.querySelector(".cross")
 function contact() {
        popup.classList.add("show");
     }
+    
+    close.addEventListener("click", ()=>{
+        popup.classList.remove("show");
+    });
 const form = document.getElementById("form");
-
-close.addEventListener("click", ()=>{
-    popup.classList.remove("show");
-});
 form.addEventListener("submit", sub);
-function sub(e){
-        e.preventDefault();
-}
+ function sub(e){
+            e.preventDefault();
+    }
 
 
 

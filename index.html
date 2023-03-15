@@ -41,6 +41,7 @@
     </section>
 
     <section class="about" id="about">
+        <div class="blank"></div>
         <h1>About us</h1>
         <div class="row-container">
 
@@ -60,24 +61,30 @@
             </div>
         </div>
     </section>
+
     <div class="pop-up">
-        <div class="cross">
-            <i class="fa-sharp fa-solid fa-xmark"></i>
+        <div class="contact">
+            <div class="cross">
+                <i class="fa-sharp fa-solid fa-xmark"></i>
+            </div>
+            <h1>Contact</h1>
+            <div class="content">
+                <p>Feel free to contact me by phone or email. Alternatively fill out the form below, and I will get back
+                    to you when I can.</p>
+            </div>
         </div>
         <form name="form1" id="form">
-
-            <label for="name"> Enter Your Name</label>
-            <input type="text" id="name" name="name"><br>
-
-            <label for="price">Enter Email</label>
-            <input type="email" id="email" name="email"><br>
-
+            <input type="text" id="name" name="name" placeholder="Name"><br>
+            <input type="email" id="email" name="email" placeholder="email"><br>
+            <input type="text" id="subject" name="subject" placeholder="subject"><br>
+            <input type="text" id="message" name="message" placeholder="message"><br>
             <button type="submit">Submit</button>
         </form>
     </div>
+
     <section class="gallery" id="gallery">
+        <div class="blank"></div>
         <h1>Destinations</h1>
-        <!-- <i class="fa-light fa-plus" onclick="addItem()"></i> -->
         <div class="scroll-product">
             <div class="scroll-left-btn" id="scroll-left">
                 <button>
@@ -91,13 +98,34 @@
             <div class="row-container" id="All-Products">
 
                 <div class="row">
-                    <img src="images/egypt.avif" alt="">
+                    <img src="images/maldivesjpeg" alt="">
+                    <button class="package">25999$</button>
+                    <div class="content">
+                        <h2>Maldives</h2>
+                        <p>The Maldives, officially the Republic of Maldives, is an archipelagic state in South Asia,
+                            situated in the Indian Ocean. It lies southwest of Sri Lanka and India, about 750 kilometres
+                            from the Asian continent's mainland. </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="images/las-vegas.jpeg" alt="">
                     <button class="package">2499$</button>
                     <div class="content">
-                        <h2>Giza Pyramid, Egypt</h2>
-                        <p>The Great Pyramid of Giza is the largest Egyptian pyramid and the tomb of Fourth Dynasty
-                            pharaoh
-                            Khufu. </p>
+                        <h2>Las Vegas, USA</h2>
+                        <p>TLas Vegas, is the 25th-most populous city in the United States,
+                            the most populous city in the state of Nevada, and the county seat of Clark County. The city
+                            anchors the Las Vegas Valley metropolitan area and is the largest city within the greater
+                            Mojave Desert </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="images/dubai.jpeg" alt="">
+                    <button class="package">2499$</button>
+                    <div class="content">
+                        <h2>Dubai</h2>
+                        <p>Dubai is a city and emirate in the United Arab Emirates known for luxury shopping,
+                            ultramodern architecture and a lively nightlife scene. Burj Khalifa, an 830m-tall tower,
+                            dominates the skyscraper-filled skyline.</p>
                     </div>
                 </div>
 
@@ -127,7 +155,7 @@
                     <button class="package">499$</button>
                     <div class="content">
                         <h2>Statue of Unity, Surat,India</h2>
-                        <p>TThe Statue of Unity is the world's tallest statue, with a height of 182 metres (597
+                        <p>The Statue of Unity is the world's tallest statue, with a height of 182 metres (597
                             feet), located near Kevadia in the state of Gujarat, India. </p>
                     </div>
                 </div>
@@ -136,23 +164,13 @@
                     <img src="images/simla.avif" alt="">
                     <button class="package">799$</button>
                     <div class="content">
-                        <h2>Simla, Himachal Pradesh, India</h2>
-                        <p>TThe Statue of Unity is the world's tallest statue, with a height of 182 metres (597
-                            feet), located near Kevadia in the state of Gujarat, India. </p>
+                        <h2>Shimla, Himachal Pradesh, India</h2>
+                        <p>Shimla is the capital and the largest city of the northern Indian state of Himachal
+                            Pradesh. In 1864, Shimla was declared as the summer capital of British India After
+                            independence, the city became the capital of East Punjab and was later made the capital city
+                            of Himachal Pradesh.</p>
                     </div>
                 </div>
-
-                <div class="row">
-                    <img src="images/opera-house.avif" alt="">
-                    <button class="package">5999$</button>
-                    <div class="content">
-                        <h2>Opera House,Sydney Australia</h2>
-                        <p>The Sydney Opera House is a multi-venue performing arts centre in Sydney. Located on the
-                            foreshore of Sydney Harbour, it is widely regarded as one of the world's most famous and
-                            distinctive buildings and a masterpiece of 20th-century architecture. </p>
-                    </div>
-                </div>
-
 
             </div>
 

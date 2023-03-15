@@ -1,29 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: 'kalam',cursive;
+    font-family: 'kalam', cursive;
 }
-body{
+
+body {
 
     background-attachment: fixed;
 }
-a{
+.blank{
+    height: 40px;
+}
+
+/* Navbar Start */
+a {
     text-decoration: none;
     color: black;
 }
-.logo{
+
+.logo {
     margin-left: 50px;
     /* margin-top: 3px; */
     color: #0098a1;
     font-size: 30px;
 }
-header{
+header {
     display: flex;
     flex-wrap: wrap;
     background: #fff;
-    box-shadow: 8px 8px 10px #cbced1,-8px -8px 10px #cbced1;
+    box-shadow: 8px 8px 10px #cbced1, -8px -8px 10px #cbced1;
     justify-content: space-between;
     /* margin-top: 1.5em; */
     height: 2.5em;
@@ -33,48 +40,59 @@ header{
     z-index: 1;
     
 }
-.navbar ul{
+
+.navbar ul {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     width: 500px;
-    margin-top: 6px; 
+    margin-top: 6px;
 }
-.navbar ul li{
+
+.navbar ul li {
     list-style-type: none;
 }
 
-.navbar ul li a:hover{
+.navbar ul li a {
+    cursor: pointer;
+}
+
+.navbar ul li a:hover {
     color: #0098a1;
 }
 
+/* Navbar End */
+
 /* home Screen */
 
-.home .video video{
+.home .video video {
     position: relative;
     height: 100%;
     width: 100%;
     object-fit: cover;
     z-index: -2;
 }
-.home .content{
+
+.home .content {
     position: absolute;
     top: 300px;
     left: 200px;
 }
-.home .content h1{
+
+.home .content h1 {
     color: #090a50;
-    font-size:60px;
+    font-size: 60px;
     align-items: center;
 }
-.home .content p{
+
+.home .content p {
     color: #090a50;
-    font-size:20px;
+    font-size: 30px;
 
 }
 
 /* about Start */
 
-.about .row-container{
+.about .row-container {
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -82,29 +100,35 @@ header{
     margin-left: 10em;
     margin-top: 5em;
 }
-.about h1{
+
+.about h1 {
     color: #0098a1;
-    font-size:60px;
-    width:4em;
+    font-size: 60px;
+    width: 4em;
     margin: auto;
 }
-.about .row-container img{
+
+.about .row-container img {
     height: 500px;
     width: 500px;
 }
-.about .row-container .row{
+
+.about .row-container .row {
     width: 30em;
     height: 30em;
 }
-.about .row-container .row h2{
+
+.about .row-container .row h2 {
     color: #0098a1;
     /* font-size: 45px; */
 
 }
-.about .row-container .row .content{
+
+.about .row-container .row .content {
     margin-top: 3em;
 }
-.btn{
+
+.btn {
     border: none;
     outline: none;
     height: 2em;
@@ -112,81 +136,106 @@ header{
     margin-top: 1em;
     background-color: #0098a1;
     color: white;
-    
+
     font-size: 20px
 }
-.btn:hover{
+
+.btn:hover {
     background-color: white;
     color: #0098a1;
 
 }
+
 /* about End */
 /* Form  Start*/
-.pop-up{
+.pop-up {
     position: fixed;
     top: 0;
     padding-top: 15em;
     left: 0;
     height: 100%;
     width: 100%;
-    background:rgba(0,0,0,0.4) ;
+    background: rgba(0, 0, 0, 0.8);
     z-index: 4;
 }
-form{
+
+form {
     background-color: white;
     border: 2px solid #0098a1;
     border-radius: 1em;
-    height: 15em;
-    width: 25em;
+    height: 20em;
+    width: 20em;
     margin: auto;
-    padding-top: 5em;
-
-    /* display: none; */
 }
-.pop-up{
+
+.pop-up {
     opacity: 0;
     pointer-events: none;
     transition: all 1s ease;
 }
-.cross i{
-    position: relative;
-    left:68em;
-    top: 3em;
-    
+.pop-up .contact{
+    width: 450px;
+    margin: auto;
+    color:white;
+    margin-bottom: 4em;
 }
-.pop-up.show{
+.pop-up .contact h1{
+    margin-left: 5em;
+}
+.cross i {
+    position: relative;
+    left: 70em;
+    color: white;
+    padding: 1em;
+
+}
+
+.pop-up.show {
     opacity: 1;
     pointer-events: auto;
 }
-.pop-up form button{
+
+.pop-up form button {
     outline: none;
     border: none;
     padding: 0.8em 1.5em;
     color: white;
     font-weight: 500;
-    font-size: 1em;
-    width: 100%;
+    font-size: 1.2em;
+    width: 90%;
     border-radius: 1em;
     margin-top: 1em;
-    background-color:#0098a1;
+    margin-left: .9em;
+    background-color: #0098a1;
 }
-form input{
-    margin-top: 1em;
+
+
+.pop-up form input {
+    outline: none;
+    border: none;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    border-bottom: 2px solid rgb(223, 218, 218);
+    width: 90%;
+    height: 3em;
 }
+
 /* form  End*/
+
 /* Gallery Start*/
-.gallery{
+.gallery {
     box-shadow: 2px 2px 8px #ccc;
     margin: 25px 80px 25px 100px;
 }
-.gallery h1{
+
+.gallery h1 {
     color: #0098a1;
-    font-size:60px;
-    width:4em;
+    font-size: 60px;
+    width: 4em;
     margin: auto;
 }
 
-.gallery .row-container{
+.gallery .row-container {
     margin: 25px 100px;
     overflow: hidden;
     gap: 5em;
@@ -195,7 +244,8 @@ form input{
     height: 38em;
     grid-template-columns: repeat(20, 1fr);
 }
-.package{
+
+.package {
     position: absolute;
     left: 0.5em;
     top: 1em;
@@ -203,83 +253,95 @@ form input{
     width: 5em;
     font-size: 1.2em;
     color: white;
-    background-color: #0098a1;;
+    background-color: #0098a1;
+    ;
     border-radius: 0.5em;
     outline: none;
     border: none;
 }
-.gallery .row-container .row{
+
+.gallery .row-container .row {
     position: relative;
     flex: 1 1 30em;
     box-shadow: 2px 2px 8px #ccc;
     height: 36em;
 }
 
-.gallery .row-container .row img{
+.gallery .row-container .row img {
     height: 25em;
     width: 25em;
 }
-.scroll-product{
+
+.scroll-product {
     display: flex;
     background-color: transparent;
 }
-.scroll-left-btn{
+
+.scroll-left-btn {
     position: relative;
     align-self: center;
     margin: 0px 10px 0px 0px;
 }
 
-.scroll-right-btn{
+.scroll-right-btn {
     position: relative;
     align-self: center;
     margin: 0px 0px 0px 10px;
 }
-.scroll-left-btn > button{
-    box-shadow:  2px 1px 0 rgb(0 0 0 / 11%),-1px -2px 0 rgb(0 0 0 / 11%);
+
+.scroll-left-btn>button {
+    box-shadow: 2px 1px 0 rgb(0 0 0 / 11%), -1px -2px 0 rgb(0 0 0 / 11%);
     background-color: white;
     border: none;
     border-radius: 0px 5px 5px 0px;
     padding: 40px 10px;
     cursor: pointer;
 }
-.scroll-right-btn > button{
-    box-shadow:  2px 1px 0 rgb(0 0 0 / 11%),-1px -2px 0 rgb(0 0 0 / 11%);
+
+.scroll-right-btn>button {
+    box-shadow: 2px 1px 0 rgb(0 0 0 / 11%), -1px -2px 0 rgb(0 0 0 / 11%);
     background-color: white;
     border: none;
     border-radius: 0px 5px 5px 0px;
     padding: 40px 10px;
     cursor: pointer;
 }
-.scroll-right-btn > button > svg{
+
+.scroll-right-btn>button>svg {
     transform: rotate(180deg);
 }
+
 /* Gallery End*/
 
 /* Services Start*/
-.services h1{
+.services h1 {
     color: #0098a1;
-    font-size:60px;
-    width:4em;
+    font-size: 60px;
+    width: 4em;
     margin: auto;
 }
-.services .row-container{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+
+.services .row-container {
+    display: flex;
+    flex-wrap: wrap;
     margin: 25px 100px;
     gap: 5em;
 }
-.services .row-container .row{
+
+.services .row-container .row {
     height: 18em;
     width: 30em;
     box-shadow: 2px 2px 8px #ccc;
 }
-.services .row-container .row .content{
+
+.services .row-container .row .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.services .row-container .row img{
+
+.services .row-container .row img {
     margin-left: 10em;
     height: 10em;
     width: 10em;
