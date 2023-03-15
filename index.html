@@ -15,10 +15,11 @@
 </head>
 
 <body>
+    <!-- Navbar Start -->
     <header>
         <a href="" class="logo">Travel.</a>
         <nav class="navbar">
-
+            
             <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -27,41 +28,50 @@
             </ul>
         </nav>
     </header>
+    <!-- Navbar End -->
 
+    <!-- Home Start -->
+    
     <section id="home" class="home">
         <div class="video">
             <video src="images/video.mp4" loop muted autoplay></video>
         </div>
-
+        
         <div class="content">
             <h1>Adventure in Worthwhile</h1>
             <p>explore new place with us.</p>
-
+            
         </div>
     </section>
+    <!-- Home End -->
 
+    <!-- About Start -->
+    
     <section class="about" id="about">
         <div class="blank"></div>
         <h1>About us</h1>
         <div class="row-container">
-
+            
             <img src="images/about-us.avif" alt="">
-
+            
             <div class="row">
                 <h2>Why choose us?</h2>
-
+                
                 <div class="content">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit inventore in,
                         voluptates asperiores vel quo a cum molestias rerum optio, velit et? Sed natus assumenda quos
                         aspernatur sunt eligendi est!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, adipisci.</p>
-                    <button class="btn"> Read More</button>
-                    <button class="btn" onclick="contact()"> Contact us</button>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, adipisci.</p>
+                        <button class="btn"> Read More</button>
+                        <button class="btn" onclick="contact()"> Contact us</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    <!-- About End -->
 
+    <!-- Popup Box Start -->
+    
     <div class="pop-up">
         <div class="contact">
             <div class="cross">
@@ -71,17 +81,20 @@
             <div class="content">
                 <p>Feel free to contact me by phone or email. Alternatively fill out the form below, and I will get back
                     to you when I can.</p>
+                </div>
             </div>
+            <form name="form1" id="form">
+                <input type="text" id="name" name="name" placeholder="Name"><br>
+                <input type="email" id="email" name="email" placeholder="email"><br>
+                <input type="text" id="subject" name="subject" placeholder="subject"><br>
+                <input type="text" id="message" name="message" placeholder="message"><br>
+                <button type="submit">Submit</button>
+            </form>
         </div>
-        <form name="form1" id="form">
-            <input type="text" id="name" name="name" placeholder="Name"><br>
-            <input type="email" id="email" name="email" placeholder="email"><br>
-            <input type="text" id="subject" name="subject" placeholder="subject"><br>
-            <input type="text" id="message" name="message" placeholder="message"><br>
-            <button type="submit">Submit</button>
-        </form>
-    </div>
+    <!-- Popup Box End -->
 
+    <!-- Gallery Start -->
+        
     <section class="gallery" id="gallery">
         <div class="blank"></div>
         <h1>Destinations</h1>
@@ -99,7 +112,7 @@
 
                 <div class="row">
                     <img src="images/maldivesjpeg" alt="">
-                    <button class="package">25999$</button>
+                    <button class="package">999$</button>
                     <div class="content">
                         <h2>Maldives</h2>
                         <p>The Maldives, officially the Republic of Maldives, is an archipelagic state in South Asia,
@@ -109,7 +122,7 @@
                 </div>
                 <div class="row">
                     <img src="images/las-vegas.jpeg" alt="">
-                    <button class="package">2499$</button>
+                    <button class="package">3999$</button>
                     <div class="content">
                         <h2>Las Vegas, USA</h2>
                         <p>TLas Vegas, is the 25th-most populous city in the United States,
@@ -120,7 +133,7 @@
                 </div>
                 <div class="row">
                     <img src="images/dubai.jpeg" alt="">
-                    <button class="package">2499$</button>
+                    <button class="package">2999$</button>
                     <div class="content">
                         <h2>Dubai</h2>
                         <p>Dubai is a city and emirate in the United Arab Emirates known for luxury shopping,
@@ -131,7 +144,7 @@
 
                 <div class="row">
                     <img src="images/jaipur.avif" alt="">
-                    <button class="package">1699$</button>
+                    <button class="package">199$</button>
                     <div class="content">
                         <h2>Jaipur, Rajesthan, India</h2>
                         <p>Jaipur is also known as the Pink City, due to the dominant colour scheme of its buildings.
@@ -141,7 +154,7 @@
 
                 <div class="row">
                     <img src="images/opera-house.avif" alt="">
-                    <button class="package">2599$</button>
+                    <button class="package">599$</button>
                     <div class="content">
                         <h2>Opera House, Sydney, Australia</h2>
                         <p>The Sydney Opera House is a multi-venue performing arts centre in Sydney. Located on the
@@ -152,7 +165,7 @@
 
                 <div class="row">
                     <img src="images/statue-unity.avif" alt="">
-                    <button class="package">499$</button>
+                    <button class="package">99$</button>
                     <div class="content">
                         <h2>Statue of Unity, Surat,India</h2>
                         <p>The Statue of Unity is the world's tallest statue, with a height of 182 metres (597
@@ -162,7 +175,7 @@
 
                 <div class="row">
                     <img src="images/simla.avif" alt="">
-                    <button class="package">799$</button>
+                    <button class="package">299$</button>
                     <div class="content">
                         <h2>Shimla, Himachal Pradesh, India</h2>
                         <p>Shimla is the capital and the largest city of the northern Indian state of Himachal
@@ -184,23 +197,23 @@
             </div>
         </div>
     </section>
+    <!-- Gallery End -->
 
-
-
+    <!-- Services Start -->
     <section class="services" id="services">
         <h1>Services</h1>
         <div class="row-container">
-
+            
             <div class="row">
                 <img src="images/best-hotel.png" alt="">
                 <div class="content">
                     <h2>Affordable Hotel</h2>
                     <p>
                         We Provide Best hotel in the world.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <img src="images/food1.png" alt="">
+                <div class="row">
+                    <img src="images/food1.png" alt="">
                 <div class="content">
                     <h2>Food and Drink</h2>
                     <p>We Serve Good Quality of Food and Drink</p>
@@ -212,27 +225,28 @@
                     <h2>Safety</h2>
                     <p>
                         We hired best unit to potect our tourism.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="images/adventure.png" alt="">
+                    <div class="content">
+                        <h2>Adventure</h2>
+                        <p>
+                            Our Adventure are best in the world.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img src="images/travel.png" alt="">
+                        <div class="content">
+                            <h2>Fastest Travel</h2>
+                            <p>
+                                We Provide Best Route .</p>
                 </div>
             </div>
-            <div class="row">
-                <img src="images/adventure.png" alt="">
-                <div class="content">
-                    <h2>Adventure</h2>
-                    <p>
-                        Our Adventure are best in the world.</p>
-                </div>
-            </div>
-            <div class="row">
-                <img src="images/travel.png" alt="">
-                <div class="content">
-                    <h2>Fastest Travel</h2>
-                    <p>
-                        We Provide Best Route .</p>
-                </div>
-            </div>
-
+            
         </div>
     </section>
+    <!-- Services End -->
     <script src="spa.js"></script>
 </body>
 
