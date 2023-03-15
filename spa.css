@@ -112,6 +112,9 @@ header {
     height: 500px;
     width: 500px;
 }
+.about .row-container p{
+    color: #090a50;
+}
 
 .about .row-container .row {
     width: 30em;
@@ -271,6 +274,9 @@ form {
     height: 25em;
     width: 25em;
 }
+.gallery .row-container .row p{
+    color: #090a50;
+}
 
 .scroll-product {
     display: flex;
@@ -345,6 +351,9 @@ form {
     margin-left: 10em;
     height: 10em;
     width: 10em;
+}
+.services .row-container .row p{
+    color: #090a50;
 }
 
 /* Services End*/
