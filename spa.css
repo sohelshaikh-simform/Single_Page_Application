@@ -82,7 +82,7 @@ header {
 
 .home .content h1 {
     color: #090a50;
-    font-size: 60px;
+    font-size: 4em;
     align-items: center;
 }
 
@@ -271,6 +271,9 @@ form {
     box-shadow: 2px 2px 8px #ccc;
     height: 36em;
 }
+.gallery .row-container .row:hover {
+transform: translateY(-20px);
+}
 
 .gallery .row-container .row img {
     height: 25em;
@@ -323,10 +326,13 @@ form {
 
 /* Services Start*/
 .services{
-    margin-bottom: 9em;
+    /* margin-bottom: 8em; */
+    /* background-image: linear-gradient(to right top, #C6EA8D ,#FE90AF); */
+    background-image: url("images/881e1e.webp");
+    height: 930px;
 }
 .services h1 {
-    color: #0098a1;
+    color: #090a50;
     font-size: 60px;
     width: 4em;
     margin: auto;
@@ -343,7 +349,12 @@ form {
 .services .row-container .row {
     height: 18em;
     width: 30em;
+    border-radius: 10em;
+    background: #ccc;
     box-shadow: 2px 2px 8px #ccc;
+}
+.services .row-container .row:hover {
+    transform: translateY(-20px);
 }
 
 .services .row-container .row .content {
