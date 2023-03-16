@@ -347,7 +347,7 @@ transform: translateY(-20px);
 }
 
 .services .row-container .row {
-    height: 18em;
+    height: 14em;
     width: 30em;
     border-radius: 10em;
     background: #ccc;
@@ -365,9 +365,10 @@ transform: translateY(-20px);
 }
 
 .services .row-container .row img {
-    margin-left: 10em;
-    height: 10em;
-    width: 10em;
+    margin-left: 12em;
+    margin-top: 2em;
+    height: 5em;
+    width: 5em;
 }
 .services .row-container .row p{
     color: #090a50;
