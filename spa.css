@@ -5,14 +5,18 @@
     padding: 0;
     font-family: 'kalam', cursive;
 }
-html { scroll-behavior: smooth; }
+
+html {
+    scroll-behavior: smooth;
+}
 
 
 body {
 
     background-attachment: fixed;
 }
-.blank{
+
+.blank {
     height: 50px;
 }
 
@@ -24,23 +28,21 @@ a {
 
 .logo {
     margin-left: 50px;
-    /* margin-top: 3px; */
     color: #0098a1;
     font-size: 30px;
 }
+
 header {
     display: flex;
     flex-wrap: wrap;
     background: #fff;
     box-shadow: 8px 8px 10px #cbced1, -8px -8px 10px #cbced1;
     justify-content: space-between;
-    /* margin-top: 1.5em; */
     height: 2.5em;
     font-size: large;
     position: fixed;
     width: 100%;
     z-index: 1;
-    
 }
 
 .navbar ul {
@@ -52,6 +54,19 @@ header {
 
 .navbar ul li {
     list-style-type: none;
+}
+
+.btn2 {
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black;
+    font-size: 17px
+}
+
+.btn2:hover {
+    color: #0098a1;
+
 }
 
 .navbar ul li a {
@@ -89,7 +104,6 @@ header {
 .home .content p {
     color: #090a50;
     font-size: 30px;
-
 }
 
 /* about Start */
@@ -114,7 +128,8 @@ header {
     height: 500px;
     width: 500px;
 }
-.about .row-container p{
+
+.about .row-container p {
     color: #090a50;
 }
 
@@ -125,8 +140,6 @@ header {
 
 .about .row-container .row h2 {
     color: #0098a1;
-    /* font-size: 45px; */
-
 }
 
 .about .row-container .row .content {
@@ -141,17 +154,16 @@ header {
     margin-top: 1em;
     background-color: #0098a1;
     color: white;
-
     font-size: 20px
 }
 
 .btn:hover {
     background-color: white;
     color: #0098a1;
-
 }
 
 /* about End */
+
 /* Form  Start*/
 .pop-up {
     position: fixed;
@@ -178,15 +190,18 @@ form {
     pointer-events: none;
     transition: all 1s ease;
 }
-.pop-up .contact{
+
+.pop-up .contact {
     width: 450px;
     margin: auto;
-    color:white;
+    color: white;
     margin-bottom: 4em;
 }
-.pop-up .contact h1{
+
+.pop-up .contact h1 {
     margin-left: 5em;
 }
+
 .cross i {
     position: relative;
     left: 30em;
@@ -271,15 +286,17 @@ form {
     box-shadow: 2px 2px 8px #ccc;
     height: 36em;
 }
+
 .gallery .row-container .row:hover {
-transform: translateY(-20px);
+    transform: translateY(-20px);
 }
 
 .gallery .row-container .row img {
     height: 25em;
     width: 25em;
 }
-.gallery .row-container .row p{
+
+.gallery .row-container .row p {
     color: #090a50;
 }
 
@@ -325,12 +342,13 @@ transform: translateY(-20px);
 /* Gallery End*/
 
 /* Services Start*/
-.services{
-    /* margin-bottom: 8em; */
-    /* background-image: linear-gradient(to right top, #C6EA8D ,#FE90AF); */
+.services {
     background-image: url("images/881e1e.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 930px;
 }
+
 .services h1 {
     color: #090a50;
     font-size: 60px;
@@ -342,8 +360,9 @@ transform: translateY(-20px);
     display: flex;
     flex-wrap: wrap;
     margin: 25px 100px;
+    padding-top: 5em;
     gap: 5em;
-    
+
 }
 
 .services .row-container .row {
@@ -353,6 +372,7 @@ transform: translateY(-20px);
     background: #ccc;
     box-shadow: 2px 2px 8px #ccc;
 }
+
 .services .row-container .row:hover {
     transform: translateY(-20px);
 }
@@ -370,7 +390,8 @@ transform: translateY(-20px);
     height: 5em;
     width: 5em;
 }
-.services .row-container .row p{
+
+.services .row-container .row p {
     color: #090a50;
 }
 

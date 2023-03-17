@@ -44,75 +44,18 @@ function hideRight() {//function to handle right button 
     }
 }
 
-
-
 // Pop up Box
-let popup=document.querySelector(".pop-up");
-let close=document.querySelector(".cross")
+let popup = document.querySelector(".pop-up");
+let close = document.querySelector(".cross")
 function contact() {
-       popup.classList.add("show");
-    }
-    
-    close.addEventListener("click", ()=>{
-        popup.classList.remove("show");
-    });
+    popup.classList.add("show");
+}
+
+close.addEventListener("click", () => {
+    popup.classList.remove("show");
+});
 const form = document.getElementById("form");
 form.addEventListener("submit", sub);
- function sub(e){
-            e.preventDefault();
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function sub(e) {
-//     e.preventDefault();
-//     img = document.getElementById("price").value;
-//     price = document.getElementById("price").value;
-//     heading = document.getElementById("heading").value;
-//     info = document.getElementById("info").value;
-//     console.log(price, heading);
-//     // alert("Hi sohel");
-//     // console.log(card);
-//     let len = document.querySelectorAll(".gallery .row-container .row").length
-//     console.log(len);
-
-    // let div1 = document.createElement('div');
-    // div1.classList.add("row")
-    // div1.innerHTML =
-    //     `<img src="images/food1.png" alt="">
-    //                 <div class="content">
-    //                     <h2>${heading}</h2>
-    //                     <p>${info}</p>
-    //                 </div>`
-    // document.querySelector(".services .row-container").appendChild(div1);
-    // let len2 = document.querySelectorAll(".services .row-container .row").length
-    // console.log(len2);
-    
-    // let div3=document.createElement('div');
-    // div3.classList.add("row")
-    // div3.innerHTML =  `
-    // <img src="images/simla.avif" alt=""><button class="package">99999$</button><div class="content"><h2>Ahmedabad</h2><p>CONTEEE</p></div>`;
-    // console.log(div3);
-    // document.querySelector(".gallery .row-container").appendChild(div3);
-    // document.querySelector(".gallery .row-container").appendChild(div3);
-    // let len4=document.querySelectorAll(".gallery .row-container .row").length
-    // console.log(len4);
-// }
-
+function sub(e) {
+    e.preventDefault();
+}
